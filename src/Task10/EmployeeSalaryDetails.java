@@ -3,18 +3,25 @@ package Task10;
 import java.util.Scanner;
 
 public class EmployeeSalaryDetails {
-    public void EmployeeDetails(String[]arrays){
+
+    public static void main(String[] args) {
+
+
         Scanner Input = new Scanner(System.in);
         System.out.println("eneter a name =");
         String n = Input.next();
         System.out.println("enter a salary = ");
-        int sal = Input.nextInt();
+        float sal = Input.nextInt();
         System.out.println("enetr a hour=");
-        int hr = Input.nextInt();
+        float hr = Input.nextInt();
         EmployeeTask10 Details = new EmployeeTask10();
         Details.getInfo("n",sal,hr);
-        System.out.println("salary ="+Details.addSal());
-        System.out.println("hour ="+Details.addWork());
+        float Salary = Details.addSal();
+        Salary = Details.addWork();
+        System.out.println("Final salarey = "+ Salary);
+
 
     }
 }
+
+

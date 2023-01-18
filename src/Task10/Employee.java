@@ -1,7 +1,7 @@
 package Task10;
 
 public class Employee {
-    private String name,address;
+    private final String name,address;
     private int year,salary;
     public Employee(String n, int y ,int s, String a){
         this.name = n;
