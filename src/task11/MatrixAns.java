@@ -1,10 +1,19 @@
 package task11;
 
-import java.util.Random;
-
 public class MatrixAns {
     public static void main(String[] args) {
-        Matrix ans = new Matrix("rows","")
-        System.out.println();
+        Matrix m1 = new Matrix(2, 2);
+        m1.inputMatrix();
+        System.out.println("Matrix 1: ");
+        m1.printMatrix();
+        Matrix m2 = new Matrix(2, 2);
+        m2.inputMatrix();
+        System.out.println("Matrix 2: ");
+        m2.printMatrix();
+
+        m1.multiplyMatrix(m2);
+        System.out.println("Result after adding: ");
+        m1.printMatrix();
+
     }
 }
